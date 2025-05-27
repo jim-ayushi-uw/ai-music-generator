@@ -23,8 +23,7 @@ def generate_music_tensors(description, duration: int):
         temperature=0.8,
         duration=duration
     )
-
-    # Generate the music tensor
+    
     output = model.generate(
         descriptions=[description],
         progress=True
