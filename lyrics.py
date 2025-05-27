@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-# ✅ Load tokenizer & model from local path
+# Load tokenizer & model from local path
 LOCAL_MODEL_PATH = "models/mixtral"
 
 tokenizer = AutoTokenizer.from_pretrained(LOCAL_MODEL_PATH)
@@ -12,7 +12,7 @@ model = AutoModelForCausalLM.from_pretrained(
     torch_dtype="auto"
 )
 
-# 🚀 Generate full structured lyrics
+# Generate full structured lyrics
 def generate_lyrics(prompt_theme, genre, mood):
     prompt = f"""<s>[INST] Based on the theme: "{prompt_theme}", write a full English {genre} song with a {mood} mood.
 Structure it with:
@@ -39,7 +39,7 @@ Make the lyrics poetic, emotionally engaging, and musical. Use rhyme and rhythm 
 
     full_output = tokenizer.decode(output[0], skip_special_tokens=True)
 
-    # 🎯 Extract only the lyrics part
+    #  Extract only the lyrics part
     if "[/INST]" in full_output:
         lyrics = full_output.split("[/INST]")[-1].strip()
     else:
