@@ -22,9 +22,3 @@ AudioCraft is required for audio generation. You can install it using pip:
 ```bash
 pip install audiocraft
 ```
-Here are few Output Examples:
-# 1. 🎓 Graduation EDM Song (Joyful)
-
-![Graduation Lyrics](C:\Users\234355\Pictures\Screenshots\Screenshot 2025-04-21 202100.png)
-
----
