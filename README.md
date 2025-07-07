@@ -13,12 +13,4 @@ This project is an AI-based music and lyrics generation system built on top of [
 - The main file contents the streamlit UI and the interface 
 ---
 
-## Installation
 
-1. **Install AudioCraft**
-
-AudioCraft is required for audio generation. You can install it using pip:
-
-```bash
-pip install audiocraft
-```
